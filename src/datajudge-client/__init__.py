@@ -74,7 +74,7 @@ def teamname(args):
     print(response.text.strip())
 
 
-if __name__ == "__main__":
+def main():
     parser = argparse.ArgumentParser(
         description='Python client cli for Data Judge API')
     parser.add_argument('--key', default=os.getenv('DATA_JUDGE_API_KEY', ''),
